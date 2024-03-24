@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="container">
+      <div id="current-time" class="roboto-regular"></div>
+      <div id="user-input">
+        <input
+          id="cityInput"
+          class="roboto-regular"
+          type="text"
+          placeholder="Enter city name"
+        />
+        <button id="searchButton" class="roboto-regular">Search</button>
+      </div>
+      <div id="weatherInfo">
+        <p id="location" class="roboto-medium"></p>
+        <!-- Display weather data here -->
+        <div id="hero">
+          <div id="icon"></div>
+          <h1 id="temperature" class="roboto-black"></h1>
+        </div>
+
+        <div id="weather-data" class="roboto-regular">
+          <div id="section-1">
+            <p id="feels-like"></p>
+            <p id="main"></p>
+            <p id="description"></p>
+            <p id="humidity"></p>
+          </div>
+          <div id="section-2">
+            <p id="temp-max"></p>
+            <p id="temp-min"></p>
+            <p id="wind-speed"></p>
+            <p id="pressure"></p>
+            <p id="visibility"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
