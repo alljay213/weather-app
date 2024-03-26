@@ -116,6 +116,15 @@ cityInput.addEventListener("keypress", (event) => {
   }
 });
 
+cityInput.addEventListener("keypress", (event) => {
+  // Check if the pressed key is "Enter" or "Return"
+  if (event.key === "Enter" || event.keyCode === 13) {
+    const cityName = cityInput.value;
+    getWeather(cityName);
+    cityInput.value = "";
+  }
+});
+
 // Create a function to update the current time
 function updateCurrentTime() {
   // Create a new Date object
