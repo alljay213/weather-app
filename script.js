@@ -108,6 +108,14 @@ searchButton.addEventListener("click", () => {
   cityInput.value = "";
 });
 
+cityInput.addEventListener("keypress", (event) => {
+  if (event.key === "Enter") {
+    const cityName = cityInput.value;
+    getWeather(cityName);
+    cityInput.value = "";
+  }
+});
+
 // Create a function to update the current time
 function updateCurrentTime() {
   // Create a new Date object
